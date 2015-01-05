@@ -31,7 +31,7 @@ Partial Class _Default
             Else
                 Server.Transfer("Test.aspx")
             End If
-
+            MsgBox.Text = ""
         Else
             MsgBox.Text = "ERROR!"
             'Server.Transfer("Error.aspx")
