@@ -20,6 +20,9 @@
         <asp:TextBox ID="Password" runat="server" TextMode="Password"></asp:TextBox>
             <br />
         <br />
+        <asp:Label ID="MsgBox" runat="server"></asp:Label>
+        <br />
+        <br />
         <asp:Button ID="Submit" runat="server" Text="Login" />
               &nbsp;&nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/SignUp.aspx">Sign up</asp:HyperLink>

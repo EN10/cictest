@@ -33,7 +33,7 @@ Partial Class SignUp
             End If
 
         Else
-            MsgBox("ERROR!")
+            MsgBox.Text = "ERROR!"
             'Server.Transfer("Error.aspx")
         End If
 
