@@ -24,7 +24,7 @@
         <asp:TextBox ID="CPassword" runat="server" TextMode="Password"></asp:TextBox>
               <br />
         <br />
-        <asp:Button ID="Submit" runat="server" Text="Sign up" />
+        <asp:Button ID="Submit" runat="server" Text="Sign up" style="margin-top: 1px" />
               </span>
     
     </div>
