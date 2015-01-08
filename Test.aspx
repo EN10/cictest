@@ -31,19 +31,40 @@
                     <br />
                     <table align="center">
                         <tr>
-                            <td>
+                            <td style="text-align: left">
     
         <asp:Label ID="lblUser" runat="server" Text="User: "></asp:Label>
+    
+                            </td>
+                            <td style="text-align: left">
+    
         <asp:Label ID="Username" runat="server"></asp:Label>
-        <br />
-        <br />
+    
+                            </td>
+                            <td style="text-align: left">
+    
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left">
+    
+                                &nbsp;</td>
+                            <td style="text-align: left">
+    
+                                &nbsp;</td>
+                            <td style="text-align: left">
+    
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left">
+    
         <asp:Label ID="lblQ" runat="server" Text="Question ID: "></asp:Label>
-&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="Question" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="LoadQ" runat="server" Text="Load" OnClick="LoadQ_Click" />
-        <br />
-        <br />
+    
+                            </td>
+                            <td style="text-align: left">
+    
+        <asp:TextBox ID="Question" runat="server" Width="200px"></asp:TextBox>
         <asp:FormView ID="FormView1" runat="server" DataSourceID="SqlDataSource1">
             <EditItemTemplate>
                 Q:
@@ -66,25 +87,50 @@
 
             </ItemTemplate>
         </asp:FormView>
+    
+                            </td>
+                            <td style="text-align: left">
+    
+        <asp:Button ID="LoadQ" runat="server" Text="Load" OnClick="LoadQ_Click" />
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left">
+    
+        <asp:Label ID="lblA" runat="server" Text="Answer:"></asp:Label>
+    
+                            </td>
+                            <td style="text-align: left">
+    
+        <asp:TextBox ID="Answer" runat="server" Height="60px" TextMode="MultiLine" Width="200px"></asp:TextBox>
+    
+                            </td>
+                            <td style="text-align: left">
+    
+        <asp:Button ID="Submit" runat="server" Text="Submit" OnClick="Submit_Click" />
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left">
+    
+        <asp:Label ID="lblMsg" runat="server"></asp:Label>
+    
+                            </td>
+                            <td style="text-align: left">
+    
+                                &nbsp;</td>
+                            <td style="text-align: left">
+    
+                                &nbsp;</td>
+                        </tr>
+                    </table>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT [Q] FROM [Questions] WHERE ([ID] = ?)">
             <SelectParameters>
                 <asp:ControlParameter ControlID="Question" Name="ID" PropertyName="Text" Type="Int32" />
             </SelectParameters>
         </asp:SqlDataSource>
-        <br />
-        <br />
-        <asp:Label ID="lblA" runat="server" Text="Answer:"></asp:Label>
-&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="Answer" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Submit" runat="server" Text="Submit" OnClick="Submit_Click" />
-        <br />
-        <br />
-        <asp:Label ID="lblMsg" runat="server"></asp:Label>
-    
-                            </td>
-                        </tr>
-                    </table>
                 </td>
             </tr>
             <tr>
