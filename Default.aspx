@@ -34,7 +34,8 @@
             cellspacing="0">
             <tr>
                 <td colspan="2">
-                    <img height="77" src="Images/cic_logo.jpg" width="524" /></td>
+                    <a href="Default.aspx">
+                    <img height="77" src="Images/cic_logo.jpg" width="524" style="border-width: 0px" /></a></td>
             </tr>
             <tr>
                 <td colspan="2">
