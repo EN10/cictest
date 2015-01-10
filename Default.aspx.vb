@@ -27,7 +27,7 @@ Partial Class _Default
         If dSet.Tables("Student").Rows.Count > 0 Then
             Session("UN") = Username.Text
             If Session("UN") = "Enio" Then
-                Server.Transfer("Questions.aspx")
+                Server.Transfer("Admin.aspx")
             Else
                 Server.Transfer("Test.aspx")
             End If

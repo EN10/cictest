@@ -15,16 +15,6 @@
             color:black;
         }
         </style>
-    <script type="text/javascript">
-        function validate(theform) {
-            if (theform.Username == null || theform.Username.value == "")
-            { alert("ERROR: Please enter Username"); return false; }
-            else if (theform.Password == null || theform.Password.value == "")
-            { alert("ERROR: Please enter Password"); return false; }
-            else
-            { return true; }
-        }
-	</script>
 </head>
 <body>
     <form id="form1" onsubmit="return validate(this)" runat="server">
@@ -44,7 +34,7 @@
                         <tr>
                             <td style="text-align: left">
     
-        <asp:HyperLink ID="UsersLink" runat="server" NavigateUrl="~/Questions.aspx">Users</asp:HyperLink>
+        <asp:HyperLink ID="UsersLink" runat="server" NavigateUrl="~/Users.aspx">Users</asp:HyperLink>
     
                                 <br />
                                 <br />
