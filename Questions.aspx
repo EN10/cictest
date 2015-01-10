@@ -81,7 +81,7 @@
             </UpdateParameters>
         </asp:AccessDataSource>
         <br />
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Results.aspx">Results</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admin.aspx">Admin Home</asp:HyperLink>
     
     </div>
     </form>

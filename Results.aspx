@@ -70,7 +70,7 @@
             </SelectParameters>
         </asp:SqlDataSource>
         <br />
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Questions.aspx">Questions</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admin.aspx">Admin Home</asp:HyperLink>
     
     </div>
     </form>
