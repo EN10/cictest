@@ -40,4 +40,8 @@ Partial Class Test
     Protected Sub LoadQ_Click(sender As Object, e As EventArgs) Handles LoadQ.Click
         lblMsg.Text = ""
     End Sub
+
+    Protected Sub Logout_Click(sender As Object, e As EventArgs) Handles Logout.Click
+        Session("UN") = ""
+    End Sub
 End Class

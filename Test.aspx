@@ -132,6 +132,9 @@
                 <asp:ControlParameter ControlID="Question" Name="ID" PropertyName="Text" Type="Int32" />
             </SelectParameters>
         </asp:SqlDataSource>
+                    <br />
+                                <asp:Button ID="Logout" runat="server" Text="Logout" />
+    
                 </td>
             </tr>
             <tr>
