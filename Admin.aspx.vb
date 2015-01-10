@@ -11,5 +11,6 @@ Partial Class Admin
 
     Protected Sub Logout_Click(sender As Object, e As EventArgs) Handles Logout.Click
         Session("UN") = ""
+        Server.Transfer("Default.aspx")
     End Sub
 End Class
