@@ -66,6 +66,7 @@
                             <td style="text-align: left">
     
         <asp:TextBox ID="Question" runat="server" Width="200px"></asp:TextBox>
+                                <br />
         <asp:FormView ID="FormView1" runat="server" DataSourceID="SqlDataSource1">
             <EditItemTemplate>
                 Q:
@@ -88,6 +89,8 @@
 
             </ItemTemplate>
         </asp:FormView>
+    
+                                <br />
     
                             </td>
                             <td style="text-align: left">
