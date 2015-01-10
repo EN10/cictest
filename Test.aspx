@@ -14,6 +14,9 @@
             font-family: "Trebuchet MS";
             color:black;
         }
+        .auto-style1 {
+            text-align: left;
+        }
         </style>
 </head>
 <body>
@@ -32,41 +35,56 @@
                     <br />
                     <table align="center">
                         <tr>
-                            <td style="text-align: left">
+                            <td class="auto-style1">
     
         <asp:Label ID="lblUser" runat="server" Text="User: "></asp:Label>
     
                             </td>
-                            <td style="text-align: left">
+                            <td class="auto-style1">
     
         <asp:Label ID="Username" runat="server"></asp:Label>
     
                             </td>
-                            <td style="text-align: left">
+                            <td class="auto-style1">
     
                                 &nbsp;</td>
                         </tr>
                         <tr>
-                            <td style="text-align: left">
+                            <td class="auto-style1">
     
                                 &nbsp;</td>
-                            <td style="text-align: left">
+                            <td class="auto-style1">
     
                                 &nbsp;</td>
-                            <td style="text-align: left">
+                            <td class="auto-style1">
     
                                 &nbsp;</td>
                         </tr>
                         <tr>
-                            <td style="text-align: left">
+                            <td class="auto-style1">
     
         <asp:Label ID="lblQ" runat="server" Text="Question ID: "></asp:Label>
     
                             </td>
-                            <td style="text-align: left">
+                            <td class="auto-style1">
     
         <asp:TextBox ID="Question" runat="server" Width="200px"></asp:TextBox>
+    
                                 <br />
+    
+                            </td>
+                            <td class="auto-style1">
+    
+        <asp:Button ID="LoadQ" runat="server" Text="Load" OnClick="LoadQ_Click" />
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style1">
+    
+                                &nbsp;</td>
+                            <td class="auto-style1">
+    
         <asp:FormView ID="FormView1" runat="server" DataSourceID="SqlDataSource1">
             <EditItemTemplate>
                 Q:
@@ -90,42 +108,38 @@
             </ItemTemplate>
         </asp:FormView>
     
-                                <br />
-    
                             </td>
-                            <td style="text-align: left">
+                            <td class="auto-style1">
     
-        <asp:Button ID="LoadQ" runat="server" Text="Load" OnClick="LoadQ_Click" />
-    
-                            </td>
+                                &nbsp;</td>
                         </tr>
                         <tr>
-                            <td style="text-align: left">
+                            <td class="auto-style1">
     
         <asp:Label ID="lblA" runat="server" Text="Answer:"></asp:Label>
     
                             </td>
-                            <td style="text-align: left">
+                            <td class="auto-style1">
     
         <asp:TextBox ID="Answer" runat="server" Height="60px" TextMode="MultiLine" Width="200px"></asp:TextBox>
     
                             </td>
-                            <td style="text-align: left">
+                            <td class="auto-style1">
     
         <asp:Button ID="Submit" runat="server" Text="Submit" OnClick="Submit_Click" />
     
                             </td>
                         </tr>
                         <tr>
-                            <td style="text-align: left">
+                            <td class="auto-style1">
     
         <asp:Label ID="lblMsg" runat="server"></asp:Label>
     
                             </td>
-                            <td style="text-align: left">
+                            <td class="auto-style1">
     
                                 &nbsp;</td>
-                            <td style="text-align: left">
+                            <td class="auto-style1">
     
                                 &nbsp;</td>
                         </tr>
